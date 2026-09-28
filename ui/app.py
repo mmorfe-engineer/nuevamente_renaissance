@@ -65,7 +65,7 @@ init_db()
 
 # Configuración de página Streamlit
 st.set_page_config(
-    page_title="NuevaMente — Normativa Densa, Mente Nueva",
+    page_title="NuevaMente Renaissance",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -1110,8 +1110,8 @@ with tab_pmo_arq:
             <div class="nm-caption" style="color: var(--slate-11); font-size: var(--text-label);">Evidencia Objetiva del Prototipo de Referencia (Conocimiento Candidato a Transferencia) · <strong>Coordinador General & PM: Martin Morfe</strong></div>
         </div>
         <div>
-            <a href="https://github.com/mmorfe-engineer/nuevamente_g10_latam" target="_blank" style="text-decoration: none;">
-                <span class="nm-chip" style="color: var(--slate-11); border: 1px solid var(--slate-6); background-color: var(--slate-2); font-weight: 500; border-radius: var(--radius-4); padding: 2px var(--space-8); font-size: var(--text-label);">GitHub: nuevamente_g10_latam</span>
+            <a href="https://github.com/mmorfe-engineer/nuevamente_renaissance" target="_blank" style="text-decoration: none;">
+                <span class="nm-chip" style="color: var(--slate-11); border: 1px solid var(--slate-6); background-color: var(--slate-2); font-weight: 500; border-radius: var(--radius-4); padding: 2px var(--space-8); font-size: var(--text-label);">GitHub: nuevamente_renaissance</span>
             </a>
         </div>
     </div>
@@ -1235,7 +1235,7 @@ with tab_pmo_arq:
         {"cod": "O-10", "req": "Tipado estricto y manejo de excepciones con mensajes amigables", "st": "🟢 VERIFICADO", "ev": "src/llm/engine.py (conmutación defensiva multi-proveedor con fallback sintético local) · Pydantic v2 · tests/test_llm_engine.py"},
         {"cod": "O-11", "req": "OCI Object Storage activo para originales y JSON", "st": "🟠 ABIERTA (Dependencia Externa)", "ev": "Adaptador S3 implementado para desarrollo local (src/storage/s3_storage.py); persistencia activa contra servicio OCI Object Storage abierta como dependencia técnica externa."},
         {"cod": "O-12", "req": "Mínimo 3 ejemplos de ejecución", "st": "🟢 VERIFICADO", "ev": "docs/contratos_referencia/ (5 contratos JSON versionados y autovalidados: VCN Flashcards, VCN Tutorial, IAM Resumen, Manufactura y Gemini)"},
-        {"cod": "O-13", "req": "Repositorio Git estructurado con commits claros y colaborativos", "st": "🟢 VERIFICADO", "ev": "GitHub mmorfe-engineer/nuevamente_g10_latam con historial estructurado de ramas y commits colaborativos por componente"},
+        {"cod": "O-13", "req": "Repositorio Git estructurado con commits claros y colaborativos", "st": "🟢 VERIFICADO", "ev": "GitHub mmorfe-engineer/nuevamente_renaissance con historial estructurado de ramas y commits colaborativos por componente"},
         {"cod": "O-14", "req": "README con arquitectura, diagrama RAG y guía de instalación", "st": "🟢 VERIFICADO", "ev": "README.md (Diagrama Mermaid C4/RAG, insignias, arquitectura técnica y guía de instalación paso a paso)"},
     ]
     _render_criterios_block(matriz_obligatorios)
@@ -1493,5 +1493,5 @@ with tab_pmo_arq:
 
 # Pie de página institucional
 st.markdown("<hr style='border:0; border-top: 1px solid var(--slate-6); margin: var(--space-24) 0;'>", unsafe_allow_html=True)
-st.caption(f"Prototipo de Referencia · {s3_estado} · Modo de ejecución: {modo_ejec} · Repositorio: [mmorfe-engineer/nuevamente_g10_latam](https://github.com/mmorfe-engineer/nuevamente_g10_latam)")
+st.caption(f"Prototipo de Referencia · {s3_estado} · Modo de ejecución: {modo_ejec} · Repositorio: [mmorfe-engineer/nuevamente_renaissance](https://github.com/mmorfe-engineer/nuevamente_renaissance)")
 
