@@ -121,7 +121,7 @@ if "ren_flashcard_graded" not in st.session_state:
 if "cf_nivel" not in st.session_state:
     st.session_state.cf_nivel = "Fundamentos"
 if "cf_formato" not in st.session_state:
-    st.session_state.cf_formato = "Explicación conceptual"
+    st.session_state.cf_formato = "Guía"
 if "cf_prof" not in st.session_state:
     st.session_state.cf_prof = "Esencial"
 
@@ -139,7 +139,7 @@ with st.container():
     with col_nav:
         st.markdown(
             "<div style='padding-top: 12px; font-family: var(--font-ui); color: var(--ink-muted);'>"
-            "Mis materiales &nbsp;&nbsp;|&nbsp;&nbsp; <span style='font-weight: 600; color: var(--ink);'>Estudiar</span>"
+            "<span style='color: var(--ink-faint); font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;'>Modo actual:</span> <span style='font-weight: 600; color: var(--ink); margin-left: 8px;'>Estudio</span>"
             "</div>", 
             unsafe_allow_html=True
         )
@@ -161,8 +161,7 @@ if view == "HOME":
         if st.button("Subir un documento", use_container_width=True, type="primary"):
             nav_to("CREATION_FLOW")
             st.rerun()
-        if st.button("Ver cómo funciona", use_container_width=True):
-            pass
+        # CTA Secundario "Ver cómo funciona" eliminado temporalmente (evita control muerto)
 
     st.markdown("<div style='padding-top: var(--spacing-64);'></div>", unsafe_allow_html=True)
     
